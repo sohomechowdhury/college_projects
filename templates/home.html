@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap" rel="stylesheet">
+    <title>HomePage</title>
+</head>
+<style>
+    @media (min-aspect-ratio: 16/9) {
+        #videoBG {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        #videoBG {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #videoBG {
+            display: none;
+        }
+
+        body {
+            background: url('download.jpg');
+            background-size: cover;
+        }
+    }
+</style>
+
+<body>
+    <a href="/login"><button style="font-size:24px"><i class="material-icons">fingerprint</i>Login </button></a>
+    <a href="/sign_up"><button style="font-size:24px"><i class="material-icons">fingerprint</i>Sign Up</button></a>
+    <video autoplay muted loop id="videoBG" style=" position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;z-index: -1;">
+        <source src="{{url_for('static', filename='Video Inside A Library.mp4')}}" type="video/mp4">
+        </video>
+    <h1 style="position:relative;text-align: center;font-family: 'Big Shoulders Stencil Text', cursive;font-size:170px;color: white;text-shadow:black 5px 5px 5px;">
+        {{params['lib_name']}}</h1>
+    <p style="position:relative;text-align: center;font-family: 'Big Shoulders Stencil Text', cursive;font-size: 60px;color: white;text-shadow:black 5px 5px 5px;">Library</p>
+    <p style="position:relative;text-align: center;font-family: 'Big Shoulders Stencil Text', cursive;font-size: 40px;color: white;text-shadow:black 5px 5px 5px;">DAVID HARE RD., B-ZONE</p>
+    <p style="position:relative;text-align: center;font-family: 'Big Shoulders Stencil Text', cursive;font-size: 30px;color: white;text-shadow:black 5px 5px 5px;">OPEN ON WORKING DAYS form
+     10 AM - 9 PM   </p>
+</body>
+</html>

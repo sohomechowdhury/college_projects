@@ -1,0 +1,13 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/registration",
+    "prod_uri": "mysql://root:@localhost/registration",
+    "lib_name": "Knowledge Hub",
+    "gmail_user": "starjeet50@gmail.com",
+    "gmail_password":"sohome4334",
+    "admin_user": "sohome",
+    "admin_pass": "admin"
+  }
+}
